@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme=> ({
         color: 'tomato',
     },
     subtitle: {
-        color: 'tan',
+        color: '#EE036C',
         marginBottom: '3rem'
     },
     typedContainer: {
@@ -44,10 +44,10 @@ const Header = () => {
             <br/>
             <Typography className = {classes.subtitle} variant="h5">
                 <Typed
-                    strings={["Web Developer","Musician","Blah"]}
-                    typeSpeed={40}
-                    backSpeed={60}
-                    loop
+                    strings={["Creativity Is Intelligence Having Fun"]}
+                    typeSpeed={100}
+                    // backSpeed={60}
+                    // loop
                 />
             </Typography>
         </Box>

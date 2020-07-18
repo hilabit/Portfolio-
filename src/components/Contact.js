@@ -1,6 +1,6 @@
 import React from 'react';
 import {makeStyles, withStyles} from '@material-ui/core/styles';
-import {TextField, Typography, Button, Grid, Box} from '@material-ui/core';
+import {TextField, Typography, Button, Grid, Box, FormControl} from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 import Navbar from './Navbar';
 
@@ -24,23 +24,23 @@ const InputField = withStyles({
             color: "tomato",
         },
         "& label": {
-            color: "tan",
+            color: "#EE036C",
         },
         "& .MuiOutlinedInput-root": {
             "& fieldset": {
-                borderColor: "tan"
+                borderColor: "#EE036C"
             },
             "&:hover fieldset": {
-                borderColor: "tan",
+                borderColor: "#EE036C",
             },
             "&.Mui-focused fieldset": {
-                borderColor: "tan"
+                borderColor: "#EE036C"
             },
         },
     },
 })(TextField)
 
-const Contacts = () => {
+const Contact = () => {
 
     const classes = useStyles()
     return (
@@ -53,13 +53,13 @@ const Contacts = () => {
                     style={{color: "tomato", textAlign:"center", textTransform:"uppercase"
                 }}
                 >
-                    hire or contact me....
+                contact me :)
                 </Typography>
-                <InputField fullWidth={true} label="Name" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium"/>
+                <InputField fullWidth={true} label="Name" variant="outlined" inputProps={{style:{ color: "#ffff8f" }}} margin="dense" size="medium"/>
                 <br/>
-                <InputField fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium"/>
+                <InputField fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "#ffff8f" }}} margin="dense" size="medium"/>
                 <br/>
-                <InputField fullWidth={true} label="Company name" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
+                <InputField fullWidth={true} label="Your message" variant="outlined" inputProps={{style:{ color: "#ffff8f" }}} margin="dense" size="medium" />
                 <br/>
                 <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>} >
                     contact me
@@ -73,4 +73,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts;
+export default Contact;

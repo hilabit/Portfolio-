@@ -1,6 +1,8 @@
+
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { borders } from '@material-ui/system';
 import MobileRightMenuSlider from '@material-ui/core/Drawer';
 import Footer from './Footer';
 
@@ -19,28 +21,30 @@ import {
     Box
 } from "@material-ui/core";
 import {
-    ArrowBack,
     AssignmentInd,
     Home,
     Apps,
     ContactMail
 } from "@material-ui/icons";
+import MenuIcon from '@material-ui/icons/Menu';
 import avatar from "../avatar.png"
 
 const useStyles = makeStyles(theme=> ({
     menuSliderContainer: {
         width:250,
-        background:"#511",
+        background:"#012523",
         height:"100%"
     },
     avatar: {
         display:"block",
-        margin:"0.5rem auto",
+        margin:"0rem auto",
         width:theme.spacing(13),
-        height:theme.spacing(13)
+        height:theme.spacing(13),
+        border: "5px solid #cca4fd",
+
     },
     listItem: {
-        color:"tan",
+        color:"#018c77",
 
     }
 }));
@@ -63,8 +67,8 @@ const menuItems = [
     },
     {
         listIcon:<ContactMail/>,
-        listText:"Contacts",
-        listPath:"/contacts"
+        listText:"Contact",
+        listPath:"/contact"
     }
 
 
@@ -109,9 +113,9 @@ const Navbar = () => {
             <AppBar position = "static" style ={{background: "#222"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
-                        <ArrowBack style ={{color: "tomato"}} />
+                        <MenuIcon style ={{color: "#02eef4"}} />
                     </IconButton>
-                    <Typography variant="h5" style={{color:"tan"}}>
+                    <Typography variant="h5" style={{color:"#00d98a"}}>
                         Portfolio
                     </Typography>
                     <MobileRightMenuSlider

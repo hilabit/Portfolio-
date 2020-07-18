@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme=>({
             "&:nth-of-type(2n)": {
                 float: "right",
                 margin: "1rem",
-                borderColor: "tan"
+                borderColor: "#EE036C"
             },
             "&:nth-of-type(2n):before": {
                 right: "auto",
@@ -124,7 +124,7 @@ const Resume = () => {
                     <Typography variant="body1" align="center" style={{color: "tomato"}}>
                         company name
                     </Typography>
-                    <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
+                    <Typography variant="subtitle1" align="center" style={{color: "#EE036C"}}>
                         Loremlszkdgmlsdflsdznfkslzns
                         Dkjnsdfkjnsd
                         lsdfnlsdnlndslnsdflkn
@@ -142,7 +142,7 @@ const Resume = () => {
                         <Typography variant="body1" align="center" style={{color: "tomato"}}>
                             company name
                         </Typography>
-                        <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
+                        <Typography variant="subtitle1" align="center" style={{color: "#EE036C"}}>
                             Loremlszkdgmlsdflsdznfkslzns
                             Dkjnsdfkjnsd
                             lsdfnlsdnlndslnsdflkn
@@ -160,7 +160,7 @@ const Resume = () => {
                             <Typography variant="body1" align="center" style={{color: "tomato"}}>
                                 company name
                             </Typography>
-                            <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
+                            <Typography variant="subtitle1" align="center" style={{color: "#EE036C"}}>
                                 Loremlszkdgmlsdflsdznfkslzns
                                 Dkjnsdfkjnsd
                                 lsdfnlsdnlndslnsdflkn
@@ -177,7 +177,7 @@ const Resume = () => {
                                 <Typography variant="body1" align="center" style={{color: "tomato"}}>
                                     company name
                                 </Typography>
-                                <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
+                                <Typography variant="subtitle1" align="center" style={{color: "#EE036C"}}>
                                     Loremlszkdgmlsdflsdznfkslzns
                                     Dkjnsdfkjnsd
                                     lsdfnlsdnlndslnsdflkn
